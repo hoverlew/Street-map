@@ -180,6 +180,13 @@ function AppViewModel() {
         return true;
     }
 };
+/**
+ * send ajax request to wikipedia, using jquery
+ */
+var Request = function (marker) {
+    var wikiURL = "https://en.wikipedia.org/w/api.php?action=opensearch&search=" + marker.title + "&format=json&callback=wikiCallback";
+    return $.ajax({url: wikiURL, dataType: "jsonp"});
+};
 
 /*
  * Loading error prompt information

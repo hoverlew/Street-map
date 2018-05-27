@@ -2,6 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <title>Udacity实战项目-街区地图</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
@@ -35,11 +37,12 @@
     </body>
         <script src="js/knockout-3.4.2.js"></script>
         <script src="js/knockout.mapping.js"></script>
+        <script src="js/jquery.min.js"></script>
         <script src="js/json.js"></script>
         <script src="js/main.js"></script>
         <script async defer
             src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry,drawing&key=AIzaSyBIPfW8T7g0N9X0UBTMCC7XsC-111WVqkA&v=3&callback=initMap" onerror="mapErrorHandler()">
-            /*Google Api:AIzaSyBIPfW8T7g0N9X0UBTMCC7XsC-111WVqkA 此处更换自己的API*/
+            /*Google Api密钥:AIzaSyBIPfW8T7g0N9X0UBTMCC7XsC-111WVqkA 此处更换自己的API*/
             /*这里有一个反馈：谷歌Api里面如果加载失败，自身就带有错误信息提示，所以加onerror出于什么原因需要呢*/
         </script>
 </html>
